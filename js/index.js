@@ -80,9 +80,6 @@ const project = document.createElement("li");
   });
 
 
-
-
-
 // Dark Mode
 
 function dark() {
