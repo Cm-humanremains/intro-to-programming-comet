@@ -80,11 +80,16 @@ const project = document.createElement("li");
   });
 
 
+
 // Dark Mode - space mode for better viewing in teh afternoon evening time.
+=======
+// Dark Mode
+
 
 function dark() {
     var element = document.body;
     element.classList.toggle("mode");
   }
 
- 
+
+
