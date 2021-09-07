@@ -80,23 +80,16 @@ const project = document.createElement("li");
   });
 
 
+
+// Dark Mode - space mode for better viewing in teh afternoon evening time.
+=======
 // Dark Mode
+
 
 function dark() {
     var element = document.body;
     element.classList.toggle("mode");
   }
 
-  //var currentTime = new Date().getHours();
-  //if (document.body) {
-      //if (6 <= currentTime && currentTime < 20) {
-         // document.body.background = "img\Slide1.jpg";
-     // }
-      //else {
-         // document.body.background = "img\Slide1dk.jpg";
-      //}
-      //console.log(currentTime);
-  //}
 
-  // change color of home button landing page
 
