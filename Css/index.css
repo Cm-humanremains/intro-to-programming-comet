@@ -88,6 +88,11 @@ h2 {
 /*--------------Header & Paragraph Text------------*/
 
 
+
+=======
+
+
+
   /*h1:hover::before{
     content: attr(data-text);
     position:absolute;
@@ -119,6 +124,22 @@ h1 a:hover {
 }
 
 
+
+h2:hover {
+
+  color:rgb(0, 140, 255);
+  text-shadow: #ffffff;
+    
+  }
+
+
+h3 {
+
+  Margin-left: 100px;
+=======
+
+
+
 h2:hover {
 
   color:rgb(0, 140, 255);
@@ -145,6 +166,22 @@ h3 {
     text-decoration: none;
     list-style-type: none;
 }
+/*-------------------  center nav icons section----------------*/
+/*-------------------- this first part sets the shrink and move of the icons---*/
+
+
+
+.socialMedia{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:250px;
+    z-index: 3;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+=======
 
 .sci {
   display: flex;
@@ -316,4 +353,10 @@ footer li {
 }
 
 /*---------------Home Button-------------*/
+
+
+=======
+
+
+/*------------ Start Icon---------*/
 
