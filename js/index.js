@@ -1,3 +1,14 @@
+/*var d = document.getElementById('i');
+  d.style.position = "absolute";
+  d.style.left = 700+'px';
+  d.style.top = 450+'px';
+
+*/
+function remove(el) {
+    var element = el;
+    element.remove();
+  };
+
 // lesson 4-2
 // copyright and footer
 const today = new Date();
@@ -5,7 +16,7 @@ const thisyear = today.getFullYear();
 const copyright = document.createElement("p");
 copyright.innerHTML = `Chris McCourt &copy; ${thisyear}`;
 const footer = document.querySelector("footer");
-footer.appendChild(copyright)
+    footer.appendChild(copyright)
 //console.log("copyright");
 
 
@@ -21,7 +32,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill)
 };
 
-//create People skillz section
+/*//create People skillz section
 let skillz = ["Communication", "Conflict Resolution", "Critical Thinking", "Organizaiton"];
 let skillzSection = document.getElementById("skillz");
 let skillzList = skillzSection.querySelector("ul");
@@ -32,7 +43,7 @@ for (let i = 0; i < skillz.length; i++) {
     skillx.innerHTML = skillz[i];
     skillzList.appendChild(skillx)
 };
-
+*/
 
 //create Work History section
 let workh = ["Custodian", "Library Associate", "Public Works Intern", "Economic Researcher","Financial Analyst","Purchasing Director"];
