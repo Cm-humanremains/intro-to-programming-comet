@@ -1,3 +1,14 @@
+/*var d = document.getElementById('i');
+  d.style.position = "absolute";
+  d.style.left = 700+'px';
+  d.style.top = 450+'px';
+
+*/
+function remove(el) {
+    var element = el;
+    element.remove();
+  };
+
 // lesson 4-2
 // copyright and footer
 const today = new Date();
@@ -5,21 +16,47 @@ const thisyear = today.getFullYear();
 const copyright = document.createElement("p");
 copyright.innerHTML = `Chris McCourt &copy; ${thisyear}`;
 const footer = document.querySelector("footer");
-footer.appendChild(copyright)
+    footer.appendChild(copyright)
 //console.log("copyright");
 
 
-// create skills section
+// create web skills section
 let skills = ["JavaScript", "HTML", "R-Programming", "CSS"];
 let skillsSection = document.getElementById("skills");
 let skillsList = skillsSection.querySelector("ul");
 
-// generate skills list
+// generate web skills list
 for (let i = 0; i < skills.length; i++) {
     let skill = document.createElement("li");
     skill.innerHTML = skills[i];
     skillsList.appendChild(skill)
 };
+
+/*//create People skillz section
+let skillz = ["Communication", "Conflict Resolution", "Critical Thinking", "Organizaiton"];
+let skillzSection = document.getElementById("skillz");
+let skillzList = skillzSection.querySelector("ul");
+
+// generate People skillz list
+for (let i = 0; i < skillz.length; i++) {
+    let skillx = document.createElement("li");
+    skillx.innerHTML = skillz[i];
+    skillzList.appendChild(skillx)
+};
+*/
+
+//create Work History section
+let workh = ["Custodian", "Library Associate", "Public Works Intern", "Economic Researcher","Financial Analyst","Purchasing Director"];
+let workSection = document.getElementById("works");
+let workList = workSection.querySelector("ul");
+
+// work history list
+for (let i = 0; i < workh.length; i++) {
+    let worksh = document.createElement("li");
+    worksh.innerHTML = workh[i];
+    workList.appendChild(worksh)
+};
+
 
 //lesson 4-3 handle message form
 const messageForm = document.querySelector('form[name="leave_message"]')
@@ -82,8 +119,7 @@ const project = document.createElement("li");
 
 
 // Dark Mode - space mode for better viewing in teh afternoon evening time.
-=======
-// Dark Mode
+
 
 
 function dark() {
