@@ -1,0 +1,440 @@
+ /*responsive, form small screens, use 13px font size */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box
+}
+
+
+body{
+  min-width:100vw;
+  min-height: 100vh;
+  background: url('../img/Slide1.JPG')no-repeat center center fixed;
+  background-color: rgb(255, 255, 255);
+  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+  /*-----Navbar, Section and Header-----------*/
+
+  
+
+.mode{
+  min-width:100vw;
+  min-height: 100vh;
+  background-image:url('../img/earth1.JPG');
+  background-color: rgb(0, 140, 255);
+  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: rgb(255, 255, 255);
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+ 
+  }
+
+
+/*--------------Header & Paragraph Text------------*/
+
+
+/*h1:hover::before{
+  content: attr(data-text);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-25%,calc(-5% + 100px));
+  font-size: 4vw;
+  pointer-events: none;
+  font-weight: 900;
+  font-style: oblique;
+  text-shadow:rgb(194, 216, 255);
+  color:rgb(255, 255, 255);
+ 
+  align-content: center;
+}
+*/
+
+h1{
+  display:flex;
+  text-shadow: 2px 2px 6px rgb(32, 114, 238);
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-size: 2em;  
+  font-style:oblique;
+  font-weight:500;
+  padding-bottom: 2%;
+  padding-top:-1%;
+  margin-top: 12%;
+  word-wrap: none;
+  white-space: nowrap;
+  margin-left: 60%;
+}
+
+h2 {
+  display:flex;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  font-size: 4vw;  
+  font-style:oblique;
+  font-weight:900;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
+  text-decoration: none;
+  color:rgb(0, 140, 255);
+
+}
+
+
+
+h2:hover {
+
+color:rgb(0, 140, 255);
+text-shadow: #ffffff;
+text-decoration: none;
+  
+}
+
+
+
+h3 {
+    display:flex;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-size: 2em;
+    font-weight: 800;  
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top:5%;
+    color:rgb(0, 140, 255);
+    font-family:Staatliches;
+}
+
+h4 {
+display:flex;
+font-size: 1em;
+color:rgb(0, 140, 255);
+text-shadow: 2px 2px 2px rgb(0, 0, 0);
+justify-content: center;
+align-items: center;
+white-space: nowrap;
+font-family: Staatliches;
+
+}
+
+h5 {
+
+  display:flex;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 400;  
+  justify-content: center;
+  align-items: center;
+  white-space: normal;
+  text-decoration: none;
+  color:rgb(0, 140, 255);
+  font-family:Staatliches;
+}
+h5 a {
+  padding-left: 1em;
+}
+
+p {
+  display: flex;
+  font-size:10px;
+  text-align: center;
+  width:80%;
+  margin-left:1px;
+  padding-left:100px;
+  word-wrap: break-word;
+
+  }
+
+  #aboutme p {
+    display: flex;
+    font-size:10px;
+    text-align: center;
+    min-width:80vw;
+    margin-left:1px;
+    padding-left:10px;
+    word-wrap: break-word;
+  
+    }
+
+  div.container-sm {
+    margin-bottom:-2%;
+    margin-left:10px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .my-3{
+    margin-left:10px;
+    margin-right: 10px;
+  }
+  
+  
+/*-------------------  center nav icons section----------------*/
+/*-------------------- this first part sets the shrink and move of the icons---*/
+
+
+.socialMedia{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:250px;
+  z-index: 3;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.sci {
+display: flex;
+text-decoration: none;
+list-style-type: none;
+align-items: center;
+justify-content: center;
+padding-left:-1px;
+animation: move 19s infinite alternate
+
+  
+}
+@keyframes move{
+  0%{
+   transform: scale(.4,.4) skew(0deg,0deg);
+  }
+    100%{
+     transform: scale(.6,.8) skew(0deg, 0deg);
+  
+    }
+  
+  }
+  /*-------------------- style of list icons for center nav---*/
+
+
+.sci li{
+  position: relative;
+  list-style-type: none;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+/* shape of buttons */
+.sci li a {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  color:rgb(0, 140, 255);
+  border-radius: 0%;
+  box-shadow: none;
+  transition: 2s;     
+  
+}
+
+
+/*-------- Border frame  and Hover for icons-------- */
+.sci li a::before
+{
+  
+  position: absolute;
+  top:10px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 0;
+  
+}
+.sci li a:hover {
+  color:rgb(0, 140, 255);
+  transform: translateY(-20px);
+  text-decoration: none;
+  box-shadow: 2px 24px 10px (rgba(21, 7, 102, 0.103));
+  transition: 0.5s;
+  transform: rotate(360deg);
+}
+
+/*------------------- data text hover effect section---------------*/
+
+.sci li::before{
+  content: attr(data-text);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-25%,calc(-5% + 100px));
+  font-size: 4vw;
+  pointer-events: none;
+  font-weight: 900;
+  font-style: oblique;
+  text-shadow:1px,1px, 0 rgb(255, 255, 255);
+  color:rgb(0, 102, 255);
+  transition: 0.5s;
+  opacity: 0;
+  align-content: center;
+}
+
+.sci li:hover::before{
+  content:attr(data-text);
+  opacity: .7;
+  transform: translate(-25%,calc(-5% + 100px));
+  align-content: center;
+}
+
+/*-----Panel Frames-----------*/
+
+.panel {
+  width: 100%;
+  min-height: 82vh;
+  margin-top: -3%;
+  margin-left: -102%;
+  position: absolute;
+  padding-bottom: -5%;
+  margin-bottom: -5%;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.6s ease-in-out;
+  
+}
+  
+  .panel:target {
+  margin-left: 0%;
+  }
+
+.panel1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 82vh;
+  margin-top: -7%;
+  margin-left: 0%;
+  padding-left: 0%;
+  padding-bottom: -5%;
+  margin-bottom: -5%;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.6s ease-in-out;
+  }
+
+  .panel1:target {
+  margin-left: 0%;
+  }
+
+.content {
+  right: 40px;
+  left: 280px;
+  top: 50px;
+  margin-top:-30%;
+  word-wrap: break-word;
+  text-decoration: none;
+
+}
+
+form {
+  text-align: center;
+}
+button#btn{
+  text-shadow:1px,1px, 1px rgb(255, 255, 255);
+  background-color: rgb(0, 140, 255);
+  color:rgb(255, 255, 255);
+  margin-top: 1em;
+}
+/*---------------Footer------------------*/
+
+footer {
+  color:rgb(53, 120, 245);
+  padding-left:9px;
+  margin-top: -950px;
+  text-decoration: none;
+  list-style-type: none;
+  display:list-item;
+  z-index: 10;
+  
+}
+
+
+footer li {
+  float:left;
+  z-index: 20;
+}
+.github{
+  color:rgb(53, 120, 245);
+  text-decoration: none;
+  z-index: 20;
+}
+
+.linkedin{
+  color:rgb(53, 120, 245);
+text-decoration: none;
+}
+
+.facebook{
+  color:rgb(53, 120, 245);
+text-decoration: none;
+}
+
+i.fas.fa-link{
+  color: coral;
+}
+
+i.fas.fa-leaf{
+  color:darkgreen
+}
+
+i.fab.fa-codepen{
+  color:black
+}
+i.fab.fa-css3-alt{
+  color: rgb(25, 185, 79);
+}
+
+i.fas.fa-school{
+  color: chartreuse;
+}
+i.fab.fa-superpowers{
+  color:crimson;
+}
+
+.thanks li{
+  list-style-type: none;
+  margin-left:-3%;
+  text-align: center;
+  }
+
+
+/*------------ Experience, Work History and Skill Section---------*/
+.work ul{
+
+  list-style-type: none;
+  padding-left: 0%;
+  text-align: center;
+  }
+  
+.skill ul {
+
+list-style-type: none;
+padding-left: 0%;
+text-align: center;
+
+}
+
+ 
+.project ul {
+
+  list-style-type: none;
+  padding-left: 0%;
+  text-align: center;
+  
+  }
