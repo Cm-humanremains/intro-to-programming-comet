@@ -1,9 +1,4 @@
-/* responsive, form small screens, use 13px font size 
-html{
-  @media (max-width: 475px)
-    font-size: 10px;
-}*/
-
+ /*responsive, form small screens, use 13px font size */
 
 *{
   margin:0;
@@ -362,18 +357,7 @@ footer {
   list-style-type: none;
   display:list-item;
   z-index: 10;
-  
-  
-}
-@media (max-width: 479px){
-footer {
-  color:rgb(74, 137, 255);
-  padding-top:1700px;
-  padding-left:10px;
-  text-decoration: none;
-  list-style-type: none;
-  z-index: 10;
-  }
+
 }
 
 footer li {
@@ -449,4 +433,3 @@ text-align: center;
   text-align: center;
   
   }
-
