@@ -99,23 +99,23 @@ const entry = event.target.parentNode
 });
 
 
-// Github stuff lesson 6-1 and 602 adding projects section.
-
-const User = "cm-humanremains";
+const user = "cm-humanremains";
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("ul");
 
 
-fetch(`https://api.github.com/users/${User}/repos`)
-  .then((repos) => repos.json())
-  .then((repositories) => {
-    repositories.forEach((repo) => {
+
+fetch(`https://api.github.com/users/${user}/repos`)
+  .then((repo) => repo.json())
+    .then((repositories) => {
+        repositories.forEach((repo) => {
+
 const project = document.createElement("li");
    project.innerText = repo.name;
       projectList.appendChild(project);
+      
     });
   });
-
 
 
 // Dark Mode - space mode for better viewing in teh afternoon evening time.
@@ -128,4 +128,4 @@ function dark() {
   }
 
 
-
+ 
