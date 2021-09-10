@@ -99,15 +99,14 @@ const entry = event.target.parentNode
 });
 
 
-// Github stuff lesson 6-1 and 6-2 adding projects section.
-
 const user = "cm-humanremains";
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("ul");
-projectList.innerHTML ="Portfolio".link("https://github.com/Cm-humanremains");
+
+
 
 fetch(`https://api.github.com/users/${user}/repos`)
-  .then((repos) => repos.json())
+  .then((repo) => repo.json())
     .then((repositories) => {
         repositories.forEach((repo) => {
 
@@ -117,8 +116,6 @@ const project = document.createElement("li");
       
     });
   });
-
-
 
 
 // Dark Mode - space mode for better viewing in teh afternoon evening time.
