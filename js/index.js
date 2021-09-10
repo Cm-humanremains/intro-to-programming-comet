@@ -99,22 +99,25 @@ const entry = event.target.parentNode
 });
 
 
-// Github stuff lesson 6-1 and 602 adding projects section.
+// Github stuff lesson 6-1 and 6-2 adding projects section.
 
-const User = "cm-humanremains";
+const user = "cm-humanremains";
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("ul");
+projectList.innerHTML ="Portfolio".link("https://github.com/Cm-humanremains");
 
-
-fetch(`https://api.github.com/users/${User}/repos`)
+fetch(`https://api.github.com/users/${user}/repos`)
   .then((repos) => repos.json())
-  .then((repositories) => {
-    repositories.forEach((repo) => {
+    .then((repositories) => {
+        repositories.forEach((repo) => {
+
 const project = document.createElement("li");
    project.innerText = repo.name;
       projectList.appendChild(project);
+      
     });
   });
+
 
 
 
@@ -128,4 +131,4 @@ function dark() {
   }
 
 
-
+ 

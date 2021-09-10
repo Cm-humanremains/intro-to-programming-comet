@@ -1,6 +1,6 @@
- /*responsive, form small screens, use 13px font size */
+ /*responsive, form small screens specifically iphone x , xr , xs and galaxy */
 
-*{
+ *{
   margin:0;
   padding:0;
   box-sizing:border-box
@@ -70,7 +70,7 @@ h1{
   font-weight:500;
   padding-bottom: 2%;
   padding-top:-1%;
-  margin-top: 12%;
+  margin-top: 20%;
   word-wrap: none;
   white-space: nowrap;
   margin-left: 60%;
@@ -169,6 +169,8 @@ p {
     }
 
   div.container-sm {
+    display: flex;
+    margin:auto;
     margin-bottom:-2%;
     margin-left:10px;
     text-align: center;
