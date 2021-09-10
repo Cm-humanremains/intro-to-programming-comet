@@ -112,7 +112,7 @@ h3 {
     padding-bottom: 1%;
     list-style-type: none;
     text-decoration: none;
-    margin-top:5%;
+    margin-top:-3%;
     color:rgb(0, 140, 255);
     font-family:Staatliches;
 }
@@ -344,6 +344,14 @@ animation: move 19s infinite alternate
 
 }
 
+.img{
+  display: flex;
+  min-width: 25%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+
 form {
   text-align: center;
 }
@@ -358,7 +366,7 @@ button#btn{
 footer {
   color:rgb(53, 120, 245);
   padding-left:9px;
-  margin-top: -950px;
+  margin-top: -970px;
   text-decoration: none;
   list-style-type: none;
   display:list-item;
@@ -391,6 +399,10 @@ i.fas.fa-link{
   color: coral;
 }
 
+i.fab.fa-stack-overflow{
+  color: coral;
+
+}
 i.fas.fa-leaf{
   color:darkgreen
 }

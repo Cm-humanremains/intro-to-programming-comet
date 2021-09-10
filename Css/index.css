@@ -65,6 +65,14 @@ body{
 }
 */
 
+.img{
+  display: flex;
+  min-width: 25%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+
 h1{
   display:flex;
   text-shadow: 2px 2px 6px rgb(255, 255, 255);
@@ -121,7 +129,7 @@ text-decoration: none;
 h3 {
     display:flex;
     margin: auto;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-shadow: 2px 3px 4px rgb(0, 0, 0);
     font-size: 4vw;
     font-weight: 800;  
     justify-content: center;
@@ -131,6 +139,7 @@ h3 {
     color:rgb(0, 140, 255);
     font-family:Staatliches;
 }
+
 
 h4 {
 display:flex;
@@ -385,6 +394,10 @@ i.fas.fa-link{
   color: coral;
 }
 
+i.fab.fa-stack-overflow{
+  color: rgb(255, 71, 4);
+
+}
 i.fas.fa-leaf{
   color:darkgreen
 }
